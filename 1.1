@@ -1,0 +1,38 @@
+# PR1_Uvar_lub_rub_1
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<title>Задача1</title> 
+</head> 
+<body>
+<script>
+var h;
+var x1;
+var x2;
+var chislo1 = prompt('Введите h', '');
+var h = parseFloat(chislo1);
+s = Math.pow((1-Math.sin(4*h)*Math.cos(Math.pow(h,2)+18)),2);
+a = Math.sqrt((Math.abs(Math.sin(8*h))+17) / s);
+r = 3+Math.abs(Math.tan(a*Math.pow(h,2))-Math.sin(a*h));
+b = 1-Math.sqrt(3/r);
+c = a*Math.pow(h,2)+Math.sin(b*h)+b*Math.pow(h,3)*Math.cos(a*h);
+d = Math.pow(b, 2) - 4*a*c;
+
+if (d>=0)
+{ 
+x1 = (-b+Math.sqrt(d))/(2*a);
+x2 = (-b-Math.sqrt(d))/(2*a);
+document.write('x1= ', x1 );
+document.write('x2= ', x2 );
+}
+else 
+{
+document.write("Корней нет" + "<br>");
+}
+</script>
+</body> 
+</html>
+</script>
+</body> 
+</html>
+
