@@ -1,0 +1,58 @@
+# PR1_Uvar_lub_rub_1
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+{ 
+var i;
+var summa;
+summa = 0;
+i = parseFloat(i);
+
+for(i = 1; i<=10000; i++)
+{
+summa= Math.pow(-1, i+1) * 1/i;
+summa+=summa;
+}
+document.write('Результат а= ', summa);
+}
+{
+var summa2;
+var summa3;
+var raznost;
+summa2=0;
+summa3=1+1/3+1/9999
+
+for(i = 2; i<=10000; i++)
+{
+summa2=1/i;
+summa2+=summa2;
+raznost= summa3 - summa2;
+}
+document.write('Результат б= ', raznost);
+}
+{ 
+var i;
+var summa4;
+var summa5;
+summa4 = 0;
+i = parseFloat(i);
+
+for(i = 10000; i>=1; i--)
+{
+summa4= Math.pow(-1, i+1) * 1/i;
+summa4+=summa4;
+}
+document.write('Результат в= ', summa4);
+}
+{
+summa5= summa4 - summa;
+document.write('Результат г= ', summa5)
+}
+</script>
+</body> 
+</html>
+
+
+
+
